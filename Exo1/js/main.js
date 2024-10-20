@@ -5,7 +5,7 @@ function functionInfos(){
     const properties = `
     width: ${styles.width};
     height: ${styles.height};
-    background: ${styles.background};
+    background-color: ${styles.backgroundColor};
     top: ${styles.top};
     font-size: ${styles.fontSize};
     color: ${styles.color};
