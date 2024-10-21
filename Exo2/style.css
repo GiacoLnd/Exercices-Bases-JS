@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+}
+
+.square{
+    width: 200px;
+    height: 200px;
+}
+
+#carre{
+    width : 200px;
+    height : 200px;
+    border-style: solid;
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+    line-height: 180px;
+    text-shadow: 1px 1px 2px black;
+
+}
+#container{
+    display: flex;
+    justify-content: space-around;
+}
+#conteneur{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+#square1{
+    background: blue;
+}
+
+#square2{
+    background: black;
+}
+
+#square3{
+    background: green;
+}
+
+#square4{
+    background: yellow;
+}
