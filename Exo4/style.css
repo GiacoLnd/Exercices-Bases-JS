@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #CFD0D1;;
+    color: white;
+    font-family: "Roboto", sans-serif;
+}
+
+h1{
+    text-align: center;
+    padding: 25px;
+    margin: auto;
+    text-decoration: underline;
+}
+
+h2{
+    text-align: center;
+    padding: 30px;
+    font-weight:400;
+    font-size: 2em;
+
+}
+
+#container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+#social{
+    cursor:pointer;
+}
+.icon{
+    display:flex;
+    flex-direction: column;
+}
+
+.icon i{
+    font-size: 5em;
+}
+.icon span{
+    font-size: 1em;
+    padding-top: 15px;
+}
+#facebook{
+    color: white;
+    background-color: #3b5998 ;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#twitter{
+    color: white;
+    background-color: #00acee;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#instagram{
+    background-color: #cd486b;
+    color: white;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
