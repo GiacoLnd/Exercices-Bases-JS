@@ -10,9 +10,10 @@ function toggleEffects(icon, bgColor) {
 }
 
 function resetBackground(icon) {
-    icon.classList.remove('rounded', 'shadow', 'show-text');
+    if(activeIcon){
+    activeIcon.classList.remove('rounded', 'shadow', 'show-text')
+    }
     document.body.style.backgroundColor = originalBgColor;
-    
     
 }
 
@@ -31,15 +32,12 @@ icons.forEach(icon => {
         }
 
         if (activeIcon === icon) {
-            toggleEffects(icon, originalBgColor)
             resetBackground();
             activeIcon = null;
         } else {
-            if (activeIcon) {
-                activeIcon.classList.remove('rounded', 'shadow', 'show-text');
-            }
-        }
+        resetBackground();
         toggleEffects(icon, bgColor)
         activeIcon = icon;
-        })
+        }
+    })
 })

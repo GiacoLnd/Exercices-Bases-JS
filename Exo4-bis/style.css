@@ -99,3 +99,17 @@ h2{
 .shadow{
     box-shadow: 3px 15px 20px 10px black;
 }
+@media (max-width: 650px){
+    #container{
+        display:flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    h1{
+        padding: 15px;
+        margin: auto;
+    }
+    h2{
+        font-size: 1.5em;
+    }
+}
