@@ -9,6 +9,9 @@ h1{
 .square{
     width: 200px;
     height: 200px;
+    transition: ease 0.3s;
+    border: none;
+    cursor: pointer;
 }
 
 #carre{
@@ -35,15 +38,29 @@ h1{
 #square1{
     background: blue;
 }
+#square1:hover{
+    box-shadow: 0 0 30px 15px blue;
+    border-radius: 25%;
+}
 
 #square2{
     background: black;
 }
-
+#square2:hover{
+    box-shadow: 0 0 30px 15px black;
+    border-radius: 25%;
+}
 #square3{
     background: green;
 }
-
+#square3:hover{
+    box-shadow: 0 0 30px 15px green;
+    border-radius: 25%;
+}
 #square4{
-    background: yellow;
+    background: rgb(252, 252, 128);;
+}
+#square4:hover{
+    box-shadow: 0 0 30px 15px rgb(252, 252, 128);
+    border-radius: 25%;
 }

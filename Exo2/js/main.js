@@ -1,16 +1,15 @@
-function colorSquare1(){
+const squares = document.querySelectorAll('.square');
+
+function colorSquare() {
     const style = window.getComputedStyle(this);
     const backgroundColor = style.backgroundColor;
 
     const afficherCarre = document.querySelector('#carre');
-    afficherCarre.style.backgroundColor = backgroundColor
-    afficherCarre.textContent = backgroundColor
+    afficherCarre.style.backgroundColor = backgroundColor;
+    afficherCarre.textContent = backgroundColor;
 }
 
-document.getElementById('square1').addEventListener('click', colorSquare1)
 
-document.getElementById('square2').addEventListener('click', colorSquare1)
-
-document.getElementById('square3').addEventListener('click', colorSquare1)
-
-document.getElementById('square4').addEventListener('click', colorSquare1)
+squares.forEach(square => {
+    square.addEventListener('click', colorSquare);
+});
