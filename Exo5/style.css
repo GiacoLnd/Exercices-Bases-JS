@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+h1, h2{
+    text-align: center;
+}
+h2{
+    padding : 30px;
+}
+#quoteString{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+.quote{
+    border: 1px solid;
+    text-align: right;
+    padding: 20px;
+    gap: 25px;
+}
+.citations{
+    font-size: 1.3em;
+    padding: 15px;
+}
+.auteur{
+    font-size: 0.9em;
+    padding: 15px;
+}
+.fav-button{
+    width: 30px;
+    height: 30px;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: none;
+    transition: ease-out 0.3s;
+}
+.fav-button:hover{
+    color: red;
+}
+
+.favori{
+    color: red;
+}
+
+#tableauFavoris{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
